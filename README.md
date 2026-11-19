@@ -1,35 +1,34 @@
 Password Strength Checker
 
-A beginner-friendly Python project that estimates password strength using basic checks.
+A Python command-line project that demonstrates basic password-strength checks using character analysis and common weak-pattern detection.
 
 Features
 
-- Checks password length.
-- Detects uppercase and lowercase letters.
-- Checks numbers and special characters.
-- Identifies a few common weak patterns.
-- Displays a simple strength estimate.
+- Hidden password input using "getpass".
+- Uppercase and lowercase detection.
+- Number and symbol detection.
+- Common weak-pattern detection.
+- Weak, Medium, and Strong classifications.
 
 Requirements
 
-- Python 3.x
+- Python 3.8+
+- No external dependencies.
 
-Run Locally
+Installation
 
 git clone https://github.com/milindnevrekar5/password-strength-checker.git
+
 cd password-strength-checker
-python password_strength_checker.py
+python google_password_tester.py
 
-Disclaimer
+Limitations
 
-This project is an educational demonstration. Its checks are basic heuristics and do not guarantee password security. Do not enter real or sensitive passwords into untrusted applications.
+This project uses basic heuristics. It does not check breached-password databases or guarantee password security.
 
-Learning Objectives
+Safe Use
 
-- Python strings
-- Conditional statements
-- Regular expressions
-- User input handling
+Use sample passwords only. Never enter real account passwords into untrusted applications.
 
 Author
 
