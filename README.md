@@ -1,53 +1,44 @@
-# Google-Guidelines Password Strength Tester
+Password Strength Checker
 
-A Python-based cybersecurity tool that evaluates password strength based on Google's official account security guidelines. Instead of a generic point system, this script analyzes passwords for length, uniqueness, character complexity, and predictability to categorize them as Weak, Medium, or Strong.
+A beginner-friendly Python command-line project that provides a basic estimate of password strength using length and character-pattern checks.
 
-## 🚀 Features
+«This is an educational heuristic, not Google's official password checker or a security audit. Never enter a real or reused password into this demonstration.»
 
-* **Strict Guideline Adherence:** Evaluates passwords based on real-world security standards (e.g., requiring 12+ characters for a "Strong" rating).
-* **Vulnerability Scanning:** Actively detects highly predictable sequential keyboard patterns (like `qwerty` or `1234`) and basic dictionary words.
-* **Regex Character Analysis:** Utilizes Python's Regular Expressions (`re`) to verify the presence of uppercase letters, lowercase letters, numbers, and special symbols.
-* **Shoulder-Surfing Protection:** Uses Python's built-in `getpass` module to securely hide user input in the terminal, ensuring the password is not displayed on the screen as it is typed.
-* **Zero Dependencies:** Built entirely using Python's standard library. No external installations required.
+Features
 
-## 📋 Prerequisites
+- Checks password length.
+- Detects a small set of common weak patterns.
+- Checks uppercase, lowercase, numbers, and symbols.
+- Hides terminal input using Python's "getpass".
+- Uses Python's standard library.
 
-* Python 3.6 or higher installed on your system.
+Requirements
 
-## 🛠️ Installation
+- Python 3.6 or newer.
 
-1. Clone the repository to your local machine:
-   ```bash
-   git clone [https://github.com/milindnevrekar5/google-password-tester.git](https://github.com/milindnevrekar5/google-password-tester.git)
-Navigate to the project directory:
+Installation
+
+git clone https://github.com/milindnevrekar5/google-password-tester.git
 cd google-password-tester
-💻 Usage
-Run the script directly from your terminal. When prompted, type the password you want to test and press Enter. Note: Your keystrokes will not be visible on the screen for security reasons.
 python google_password_tester.py
-📊 Example Output
-Example 1: A Strong Password
-Google-Guidelines Password Evaluator
-------------------------------------
-Enter a password to test (input will be hidden): 
 
-----------------------------------------
-Password Strength Results
-----------------------------------------
-Strength: 🟢 STRONG
-Analysis: Excellent work! This password effectively blocks both human guessing and automated cyberattacks.
-Reason: It is at least 12 characters long and uses a complex combination of uppercase, lowercase, numbers, and symbols.
-Tip: Creating long passphrases made from quotes or lyrics is a great way to keep this memorable!
-Example 2: A Weak Password
-Google-Guidelines Password Evaluator
-------------------------------------
-Enter a password to test (input will be hidden): 
+Use a made-up sample password for demonstrations.
 
-----------------------------------------
-Password Strength Results
-----------------------------------------
-Strength: 🔴 WEAK
-Analysis: Your password is highly vulnerable to hacking.
-Reason: It relies on basic dictionary words, sequential keyboard patterns (like 'qwerty' or '1234'), or is under 8 characters.
-Tip: Avoid easily guessable personal information such as birthdates or nicknames.
-⚠️ Disclaimer
-Educational Purposes Only. This tool is designed to teach fundamental cybersecurity concepts, input validation, and password hygiene. Do not enter your actual, sensitive passwords (like your banking or primary email passwords) into third-party scripts.
+How It Works
+
+The "evaluate_password()" function checks basic password characteristics and prints a Weak, Medium, or Strong label. These labels are only a learning aid.
+
+Limitations
+
+- The common-pattern list is limited.
+- Character variety alone cannot reliably measure password strength.
+- It does not check breached-password databases.
+- It does not guarantee protection against attacks.
+
+Learning Outcomes
+
+Python functions, regular expressions, conditional logic, and secure terminal input.
+
+Disclaimer
+
+Educational use only. Never submit real passwords or sensitive credentials to this program.
